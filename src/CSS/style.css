@@ -26,6 +26,34 @@
   line-height: 2.8rem;
 }
 
+.btn-link {
+  color: #fff7f0;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  padding: 1.4rem 4.5rem;
+  border-radius: 40rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-link--black {
+  background-color: #030303;
+}
+.btn-link--black:hover {
+  background-color: #755cde;
+}
+.btn-link--orange {
+  background-color: #eb7565;
+}
+.btn-link--purple {
+  background-color: #755cde;
+}
+.btn-link--yellow {
+  background-color: #f6a560;
+}
+
 *,
 *::before,
 *::after {
@@ -40,6 +68,94 @@ html {
 
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #fff7f0;
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 0 4rem;
+}
+
+.navbar {
+  display: flex;
+  padding: 3.8rem 0;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+}
+.hero__heading {
+  margin-top: 5.6rem;
+}
+.hero__paragraph {
+  margin: 0 auto;
+  margin-top: 2.3rem;
+  width: 100%;
+  max-width: 73rem;
+}
+
+.skills-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 18.2rem 15.8rem;
+  gap: 2.4rem;
+  margin-top: 8rem;
+}
+
+.skill {
+  background-color: pink;
+  border-radius: 8px;
+  position: relative;
+}
+.skill__image {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+}
+.skill__text {
+  position: absolute;
+  bottom: 2.4rem;
+  left: 2.4rem;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.graphic-design {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+  background-color: #755cde;
+}
+
+.ui-ux {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: #f6a560;
+}
+
+.apps {
+  grid-column: 4;
+  grid-row: 1;
+  background-color: #f39e9e;
+}
+
+.photography {
+  grid-column: 5/span 2;
+  grid-row: 1;
+  background-color: #61c4b7;
+}
+
+.illustrations {
+  grid-column: 3/span 2;
+  grid-row: 2;
+  background-color: #eb7565;
+}
+
+.motion-graphics {
+  grid-column: 5/span 2;
+  grid-row: 2;
+  background-color: #552049;
 }
 
 /*# sourceMappingURL=style.css.map */

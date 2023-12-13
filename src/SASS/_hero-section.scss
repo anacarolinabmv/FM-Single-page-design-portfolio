@@ -1,0 +1,81 @@
+.navbar {
+  display: flex;
+  padding: 3.8rem 0;
+  justify-content: space-between;
+}
+
+.hero {
+  text-align: center;
+
+  &__heading {
+    margin-top: 5.6rem;
+  }
+
+  &__paragraph {
+    margin: 0 auto;
+    margin-top: 2.3rem;
+    width: 100%;
+    max-width: 73rem;
+  }
+}
+
+.skills-gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 18.2rem 15.8rem;
+  gap: 2.4rem;
+  margin-top: 8rem;
+}
+
+.skill {
+  background-color: pink;
+  border-radius: 8px;
+  position: relative;
+
+  &__image {
+    position: absolute;
+    top: 2.4rem;
+    right: 2.4rem;
+  }
+  &__text {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 2.4rem;
+
+    color: $white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: normal;
+  }
+}
+
+.graphic-design {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background-color: $purple;
+}
+.ui-ux {
+  grid-column: 3;
+  grid-row: 1;
+  background-color: $yellow;
+}
+.apps {
+  grid-column: 4;
+  grid-row: 1;
+  background-color: $light-pink;
+}
+.photography {
+  grid-column: 5 / span 2;
+  grid-row: 1;
+  background-color: $green;
+}
+.illustrations {
+  grid-column: 3 / span 2;
+  grid-row: 2;
+  background-color: $orange;
+}
+.motion-graphics {
+  grid-column: 5 / span 2;
+  grid-row: 2;
+  background-color: $dark-purple;
+}

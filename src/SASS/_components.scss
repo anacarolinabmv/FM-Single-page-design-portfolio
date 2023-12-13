@@ -1,0 +1,30 @@
+.btn-link {
+  color: #fff7f0;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2.8rem;
+  padding: 1.4rem 4.5rem;
+  border-radius: 40rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &--black {
+    background-color: $black;
+    &:hover {
+      background-color: $purple;
+    }
+  }
+  &--orange {
+    background-color: $orange;
+  }
+  &--purple {
+    background-color: $purple;
+  }
+  &--yellow {
+    background-color: $yellow;
+  }
+}
+.btn-slider {
+}
