@@ -17,14 +17,31 @@ body {
 }
 
 .slider-section {
-  margin-top: 8.8rem;
-
-  &__heading {
-    text-align: center;
-  }
   &__btns {
     display: flex;
     justify-content: center;
     gap: 2rem;
   }
+}
+
+.CTA-section {
+  width: 100%;
+  max-width: 110rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+  margin-top: 8.8rem;
+  background-color: $black;
+  color: $white;
+  padding: 8rem 6rem;
+  border-radius: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+  max-width: 110rem;
+  margin: 0 auto;
 }
