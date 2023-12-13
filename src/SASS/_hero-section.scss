@@ -5,6 +5,11 @@
 }
 
 .hero {
+  width: 100%;
+  max-width: 118rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+
   text-align: center;
 
   &__heading {

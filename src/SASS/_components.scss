@@ -23,5 +23,42 @@
     }
   }
 }
+
 .btn-slider {
+  height: 6.4rem;
+  width: 6.4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: $black;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background-color: $purple;
+  }
+
+  &--left {
+    background-image: url(/assets/icon-arrow-left.svg);
+  }
+  &--right {
+    background-image: url(/assets/icon-arrow-right.svg);
+  }
+}
+
+.slider {
+  display: flex;
+  gap: 3rem;
+  overflow-x: hidden;
+  margin: 5.6rem 0;
+
+  &__image {
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, filter 0.4s;
+
+    &:hover {
+      filter: opacity(0.8);
+    }
+  }
 }

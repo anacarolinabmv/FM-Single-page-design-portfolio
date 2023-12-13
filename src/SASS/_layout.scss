@@ -1,15 +1,30 @@
 body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: $cream;
-  width: 100%;
-  max-width: 118rem;
   margin: 0 auto;
-  padding: 0 4rem;
 }
 
-section.intro {
+.intro-section {
+  width: 100%;
+  max-width: 118rem;
+  padding: 0 4rem;
+  margin: 0 auto;
+
   margin-top: 11.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.slider-section {
+  margin-top: 8.8rem;
+
+  &__heading {
+    text-align: center;
+  }
+  &__btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
 }

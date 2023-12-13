@@ -51,6 +51,41 @@
   background-color: #f6a560;
 }
 
+.btn-slider {
+  height: 6.4rem;
+  width: 6.4rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #030303;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn-slider:hover {
+  background-color: #755cde;
+}
+.btn-slider--left {
+  background-image: url(/assets/icon-arrow-left.svg);
+}
+.btn-slider--right {
+  background-image: url(/assets/icon-arrow-right.svg);
+}
+
+.slider {
+  display: flex;
+  gap: 3rem;
+  overflow-x: hidden;
+  margin: 5.6rem 0;
+}
+.slider__image {
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, filter 0.4s;
+}
+.slider__image:hover {
+  filter: opacity(0.8);
+}
+
 *,
 *::before,
 *::after {
@@ -66,17 +101,30 @@ html {
 body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #fff7f0;
-  width: 100%;
-  max-width: 118rem;
   margin: 0 auto;
-  padding: 0 4rem;
 }
 
-section.intro {
+.intro-section {
+  width: 100%;
+  max-width: 118rem;
+  padding: 0 4rem;
+  margin: 0 auto;
   margin-top: 11.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.slider-section {
+  margin-top: 8.8rem;
+}
+.slider-section__heading {
+  text-align: center;
+}
+.slider-section__btns {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
 }
 
 .navbar {
@@ -86,6 +134,10 @@ section.intro {
 }
 
 .hero {
+  width: 100%;
+  max-width: 118rem;
+  padding: 0 4rem;
+  margin: 0 auto;
   text-align: center;
 }
 .hero__heading {
@@ -162,23 +214,23 @@ section.intro {
   background-color: #552049;
 }
 
-.intro__image {
+.intro-section__image {
   width: 100%;
   max-width: 44.5rem;
 }
-.intro__image img {
+.intro-section__image img {
   height: 100%;
   width: 100%;
 }
 
-.intro__text {
+.intro-section__text {
   width: 100%;
   max-width: 54rem;
 }
-.intro__text-paragraph {
+.intro-section__text-paragraph {
   margin-top: 3.4rem;
 }
-.intro__text-btn {
+.intro-section__text-btn {
   margin-top: 3.2rem;
 }
 
