@@ -47,10 +47,7 @@
 .btn-link--orange {
   background-color: #eb7565;
 }
-.btn-link--purple {
-  background-color: #755cde;
-}
-.btn-link--yellow {
+.btn-link--orange:hover {
   background-color: #f6a560;
 }
 
@@ -70,9 +67,16 @@ body {
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #fff7f0;
   width: 100%;
-  max-width: 110rem;
+  max-width: 118rem;
   margin: 0 auto;
   padding: 0 4rem;
+}
+
+section.intro {
+  margin-top: 11.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar {
@@ -156,6 +160,26 @@ body {
   grid-column: 5/span 2;
   grid-row: 2;
   background-color: #552049;
+}
+
+.intro__image {
+  width: 100%;
+  max-width: 44.5rem;
+}
+.intro__image img {
+  height: 100%;
+  width: 100%;
+}
+
+.intro__text {
+  width: 100%;
+  max-width: 54rem;
+}
+.intro__text-paragraph {
+  margin-top: 3.4rem;
+}
+.intro__text-btn {
+  margin-top: 3.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

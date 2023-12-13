@@ -18,12 +18,9 @@
   }
   &--orange {
     background-color: $orange;
-  }
-  &--purple {
-    background-color: $purple;
-  }
-  &--yellow {
-    background-color: $yellow;
+    &:hover {
+      background-color: $yellow;
+    }
   }
 }
 .btn-slider {

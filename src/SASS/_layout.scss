@@ -2,7 +2,14 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: $cream;
   width: 100%;
-  max-width: 110rem;
+  max-width: 118rem;
   margin: 0 auto;
   padding: 0 4rem;
+}
+
+section.intro {
+  margin-top: 11.6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
