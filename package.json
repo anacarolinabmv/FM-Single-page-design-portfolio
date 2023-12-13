@@ -1,0 +1,14 @@
+{
+  "name": "fm-single-page-design-portfolio",
+  "version": "1.0.0",
+  "description": "![Design preview for the Single-page design portfolio coding challenge](./preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ana Carolina",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
