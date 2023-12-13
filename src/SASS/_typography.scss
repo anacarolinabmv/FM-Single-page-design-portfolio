@@ -1,3 +1,4 @@
+//HEADING LARGE
 .heading-lg {
   font-size: 5.6rem;
   font-style: normal;
@@ -5,6 +6,7 @@
   line-height: normal;
 }
 
+//HEADING MEDIUM
 .heading-md {
   font-size: 4rem;
   font-style: normal;
@@ -12,6 +14,7 @@
   line-height: normal;
 }
 
+//HEADING SMALL
 .heading-sm {
   font-size: 3.2rem;
   font-style: normal;
@@ -25,21 +28,3 @@
   font-weight: 500;
   line-height: 2.8rem;
 }
-
-*,
-*::before,
-*::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  font-family: "Plus Jakarta Sans", sans-serif;
-}
-
-/*# sourceMappingURL=style.css.map */
