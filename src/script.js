@@ -1,30 +1,33 @@
 const slides = document.querySelectorAll('.slider__image');
 const btnPreviousSlide = document.querySelector('.btn-slider--left');
 const btnNextSlide = document.querySelector('.btn-slider--right');
+let curSlide = 1;
+
+const goToSlide = function () {
+  const vw = window.innerWidth;
+  const slideWidth =
+    Number(window.getComputedStyle(document.querySelector('.slider__image')).maxWidth.slice(0, 3)) + 30; //(540px + 30px gap between pictures)
+
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(${(slideWidth * curSlide + slideWidth / 2 - vw / 2) * -1}px)`;
+  });
+};
 
 const slider = function () {
-  let curSlide = 1;
-  const slideLength = 57;
-  const totalSlides = slides.length;
-  const initalTranslateX = 45;
-
-  const goToSlide = function () {
-    slides.forEach((slide) => {
-      slide.style.transform = `translateX(${initalTranslateX - slideLength * curSlide}rem)`;
-    });
-  };
+  const totalSlides = slides.length - 1;
 
   goToSlide();
 
   const nextSlide = function () {
     curSlide++;
-    if (curSlide >= totalSlides) return (curSlide = totalSlides - 1);
+    if (curSlide > totalSlides) curSlide = 0;
+
     goToSlide();
   };
 
   const previousSlide = function () {
     curSlide--;
-    if (curSlide < 0) return (curSlide = 0);
+    if (curSlide < 0) curSlide = totalSlides;
     goToSlide();
   };
 
@@ -33,3 +36,5 @@ const slider = function () {
 };
 
 slider();
+
+window.addEventListener('resize', goToSlide);

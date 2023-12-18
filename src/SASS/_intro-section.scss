@@ -1,6 +1,12 @@
 .intro-section__image {
-  width: 100%;
-  max-width: 44.5rem;
+  background-color: rebeccapurple;
+  flex: 0 1 44.5rem;
+
+  @media (max-width: $tablet-lg) {
+    transform: translateX(-8.5rem);
+    flex-basis: 36.4rem;
+    flex-shrink: 0;
+  }
 
   img {
     height: 100%;
@@ -8,6 +14,10 @@
   }
 }
 .intro-section__text {
-  width: 100%;
-  max-width: 54rem;
+  flex: 0 1 54rem;
+  background-color: beige;
+
+  @media (max-width: $tablet-lg) {
+    flex-basis: 58rem;
+  }
 }

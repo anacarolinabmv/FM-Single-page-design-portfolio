@@ -12,8 +12,13 @@ body {
 
   margin-top: 11.6rem;
   display: flex;
+  gap: 4rem;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: $tablet-lg) {
+    gap: 0;
+  }
 }
 
 .slider-section {

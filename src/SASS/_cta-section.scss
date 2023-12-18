@@ -1,6 +1,19 @@
 .CTA-section {
+  @media (max-width: $tablet-lg) {
+    display: flex;
+    flex-direction: column;
+
+    button {
+      margin-top: 2.6rem;
+    }
+  }
+
   &__text {
     width: 100%;
     max-width: 54rem;
+
+    @media (max-width: $tablet-lg) {
+      text-align: center;
+    }
   }
 }

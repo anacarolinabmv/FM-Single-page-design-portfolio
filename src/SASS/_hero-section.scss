@@ -24,6 +24,15 @@
   grid-template-rows: 18.2rem 15.8rem;
   gap: 2.4rem;
   margin-top: 8rem;
+
+  @media (max-width: $desktop-sm) {
+    gap: 2rem;
+  }
+
+  @media (max-width: $tablet-lg) {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 18.2rem 15.8rem 18.2rem;
+  }
 }
 
 .skill {
@@ -77,4 +86,18 @@
   grid-column: 5 / span 2;
   grid-row: 2;
   background-color: $dark-purple;
+}
+
+@media (max-width: $tablet-lg) {
+  .photography {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+  .illustrations {
+    grid-column: 3 / span 2;
+  }
+  .motion-graphics {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+  }
 }

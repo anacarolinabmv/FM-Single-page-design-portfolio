@@ -4,12 +4,22 @@
   font-weight: 700;
   line-height: normal;
 }
+@media (max-width: 53.75em) {
+  .heading-lg {
+    font-size: 4.4rem;
+  }
+}
 
 .heading-md {
   font-size: 4rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+}
+@media (max-width: 53.75em) {
+  .heading-md {
+    font-size: 3.2rem;
+  }
 }
 
 .heading-sm {
@@ -103,7 +113,14 @@
 }
 .slider__image {
   border-radius: 8px;
+  width: 100%;
+  max-width: 54rem;
   transition: transform 0.3s ease-in-out, filter 0.4s;
+}
+@media (max-width: 53.75em) {
+  .slider__image {
+    max-width: 50rem;
+  }
 }
 .slider__image:hover {
   filter: opacity(0.8);
@@ -134,8 +151,14 @@ body {
   margin: 0 auto;
   margin-top: 11.6rem;
   display: flex;
+  gap: 4rem;
   justify-content: space-between;
   align-items: center;
+}
+@media (max-width: 53.75em) {
+  .intro-section {
+    gap: 0;
+  }
 }
 
 .slider-section__btns {
@@ -190,6 +213,17 @@ body {
   grid-template-rows: 18.2rem 15.8rem;
   gap: 2.4rem;
   margin-top: 8rem;
+}
+@media (max-width: 62.5em) {
+  .skills-gallery {
+    gap: 2rem;
+  }
+}
+@media (max-width: 53.75em) {
+  .skills-gallery {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 18.2rem 15.8rem 18.2rem;
+  }
 }
 
 .skill {
@@ -248,9 +282,29 @@ body {
   background-color: #552049;
 }
 
+@media (max-width: 53.75em) {
+  .photography {
+    grid-column: 1/span 2;
+    grid-row: 3;
+  }
+  .illustrations {
+    grid-column: 3/span 2;
+  }
+  .motion-graphics {
+    grid-column: 3/span 2;
+    grid-row: 3;
+  }
+}
 .intro-section__image {
-  width: 100%;
-  max-width: 44.5rem;
+  background-color: rebeccapurple;
+  flex: 0 1 44.5rem;
+}
+@media (max-width: 53.75em) {
+  .intro-section__image {
+    transform: translateX(-8.5rem);
+    flex-basis: 36.4rem;
+    flex-shrink: 0;
+  }
 }
 .intro-section__image img {
   height: 100%;
@@ -258,13 +312,32 @@ body {
 }
 
 .intro-section__text {
-  width: 100%;
-  max-width: 54rem;
+  flex: 0 1 54rem;
+  background-color: beige;
+}
+@media (max-width: 53.75em) {
+  .intro-section__text {
+    flex-basis: 58rem;
+  }
 }
 
+@media (max-width: 53.75em) {
+  .CTA-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .CTA-section button {
+    margin-top: 2.6rem;
+  }
+}
 .CTA-section__text {
   width: 100%;
   max-width: 54rem;
+}
+@media (max-width: 53.75em) {
+  .CTA-section__text {
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

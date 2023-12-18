@@ -54,7 +54,13 @@
 
   &__image {
     border-radius: 8px;
+    width: 100%;
+    max-width: 54rem;
     transition: transform 0.3s ease-in-out, filter 0.4s;
+
+    @media (max-width: $tablet-lg) {
+      max-width: 50rem;
+    }
 
     &:hover {
       filter: opacity(0.8);
